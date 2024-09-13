@@ -70,13 +70,27 @@ The main results of the paper are presented in various tables and figures. Each 
 2. A log file in the `log` directory, named according to the experiment set in the script.
 3. A Jupyter notebook in the `reproduced-results` directory for parsing logs and producing tables and graphs.
 
-### Table 4 and Other Results
+## Minimal Working Example: Reproduce Figure 3 (Cora Dataset)
 
-To reproduce Table 4 and other results from the paper:
+Follow these concise steps to quickly reproduce Figure 3 for the Cora dataset.
 
-1. Locate the corresponding script in the `scripts` directory.
-2. Run the script following the instructions in the associated Jupyter notebook.
-3. Once the script has finished, open the Jupyter notebook and execute its cells to generate the final results.
+### Steps
+
+1. **Run the Script**:
+   - Navigate to the project's script directory and execute:
+     ```
+     chmod +x scripts/run_figure3.sh
+     bash scripts/run_figure3.sh
+     ```
+
+2. **Generate the Figure**:
+   - **Using Jupyter Notebook**:
+     - Open `reproduced_Results/figure3.ipynb` and run the second cell.
+   - **Using Python Script**:
+     - Run `python figure3.py` in the `reproduced_Results` directory.
+
+3. **View the Result**:
+   - Check the `reproduced_Results` directory for the newly generated figure.
 
 ## Directory Structure
 
