@@ -91,7 +91,7 @@ def main():
     plt.legend()
 
     plt.tight_layout()
-    plt.savefig(f'feature_ratio_comparison_{dataset_name.lower()}.pdf', dpi=300, bbox_inches='tight')
+    plt.savefig(f'figure3_{dataset_name.lower()}.pdf', dpi=300, bbox_inches='tight')
     plt.show()
     print(f"Figure saved as 'feature_ratio_comparison_{dataset_name.lower()}.pdf'")
 
