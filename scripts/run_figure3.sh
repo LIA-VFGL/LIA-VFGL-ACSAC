@@ -20,7 +20,8 @@ function run_experiment() {
 }
 
 export -f run_experiment
-seeds=(42 12 36 15 11 99 04 09 98 10)
+#seeds=(42 12 36 15 11 99 04 09 98 10)
+seeds=(42 12 36 15 11)
 fraction_data_gcn=(0.5)
 architectures=('gcn')
 datasets=('Cora')
