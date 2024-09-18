@@ -8,7 +8,7 @@ function run_experiment() {
     architecture=$4
     epsilon=$5
     # Change to the parent directory before running the Python script
-    (cd .. && python main.py --dataset ${dataset} --device cuda --gpu 1 --seed ${seed} --lr 0.01 --epochs 300 --val_ratio 0.02 \
+    (cd .. && python main.py --dataset ${dataset} --device cuda --gpu 0 --seed ${seed} --lr 0.01 --epochs 300 --val_ratio 0.02 \
         --train_ratio 0.5 \
         --fraction_data_gcn ${fraction_data_gcn} \
         --architecture ${architecture} \
